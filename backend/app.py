@@ -11,7 +11,7 @@ CORS(app)
 with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb+srv://Shubham123:Shubham%40123@cluster0.qgicv9y.mongodb.net/")
 db = client["healthcare_db"]
 collection = db["patients"]
 
