@@ -1,0 +1,151 @@
+body {
+  background: linear-gradient(135deg, #f0f7ff, #e6f0fa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.full-width-container {
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccd1d9;
+  border-radius: 8px;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border: 1px solid #3498db;
+  outline: none;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.result-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fbff;
+  border: 1px solid #dce3f0;
+  text-align: left;
+}
+
+.result-card h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.result-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #3498db;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.patients-table th,
+.patients-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.patients-table th {
+  background: #2980b9;
+  color: #fff;
+}
+
+.patients-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccd1d9;
+}
