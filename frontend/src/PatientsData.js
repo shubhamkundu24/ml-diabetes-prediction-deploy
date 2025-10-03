@@ -11,7 +11,10 @@ function PatientsData() {
 
   const fetchPatients = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:5000/patients");
+      const res = await axios.get(
+  "https://ml-diabetes-prediction-deploy-19.onrender.com/patients"
+);
+
       setPatients(res.data);
     } catch (err) {
       console.error(err);

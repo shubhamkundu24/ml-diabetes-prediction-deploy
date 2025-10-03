@@ -27,10 +27,13 @@ function CheckDiabetes() {
         .filter((_, i) => i !== 0) // exclude 'name' field
         .map(Number);
 
-      const res = await axios.post("http://127.0.0.1:5000/predict", {
-        name: formData.name,
-        features: features
-      });
+      const res = await axios.post(
+  "https://ml-diabetes-prediction-deploy-19.onrender.com/predict",
+  {
+    name: formData.name,
+    features: features
+  }
+);
       setResult(res.data);
     } catch (err) {
       console.error(err);

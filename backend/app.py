@@ -11,7 +11,12 @@ CORS(app)
 with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
-client = MongoClient("mongodb+srv://Shubham123:Shubham%40123@cluster0.qgicv9y.mongodb.net/")
+    client = MongoClient("mongodb+srv://Shubham123:Shubham%40123@cluster0.qgicv9y.mongodb.net/")
+
+# client = MongoClient(
+#     "mongodb+srv://Shubham123:Shubham%40123@cluster0.qgicv9y.mongodb.net/?tlsAllowInvalidCertificates=true"
+# )
+
 db = client["healthcare_db"]
 collection = db["patients"]
 
@@ -58,3 +63,7 @@ def get_patients():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+# mongodb+srv://Shubham123:Shubham%40123@cluster0.qgicv9y.mongodb.net/
